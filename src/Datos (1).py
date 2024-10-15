@@ -1,7 +1,8 @@
+from datetime import datetime
 mensajes = ["Trabajo listo", "Trabajo en proceso", "Trabajo revisado", "Trabajo corregido"]  # lista de mensajes predeterminados
 usuarios = ["Juan", "Maria", "Pedro", "Ana"]  # lista de usuarios
 historial_mensajes = []
-
+horaR=datetime.now()
 
 
 def elegir_usuario():
@@ -17,7 +18,7 @@ def elegir_mensaje(usuario_index):
     print("")
     print("1. Trabajo listo \n2. Trabajo en proceso \n3. Trabajo revisado \n4.Trabajo corregido ")
     opcion = int(input("Seleccione el mensaje:  "))
-    mensaje = f"{mensajes[opcion - 1]} enviado por {usuarios[usuario_index]}"
+    mensaje = f"{mensajes[opcion - 1]} enviado por {usuarios[usuario_index]}  {horaR}"
     historial_mensajes.append(mensaje)
     print(mensaje)
     return mensaje
