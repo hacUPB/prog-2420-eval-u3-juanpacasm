@@ -7,7 +7,7 @@ ID:  000554106
 ---
 
 # HISTORIAL
-## Pseudocodigo
+# Pseudocodigo
 ### Declarar Variables:
  mensajes: Lista de mensajes predeterminados.
 usuarios: Lista de nombres de usuarios.
